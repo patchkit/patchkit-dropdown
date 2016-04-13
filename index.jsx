@@ -8,7 +8,7 @@ function toItemObj (o) {
 }
 
 function toItemValue (o) {
-  if (o.value)
+  if ('value' in o)
     return o.value
   return o
 }
